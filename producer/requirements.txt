@@ -1,0 +1,13 @@
+# ── producer/requirements.txt ────────────────────────────
+# Stooq data fetching
+yfinance
+
+pandas==2.2.1
+requests==2.31.0
+ 
+# Kafka
+kafka-python-ng==2.2.2 
+ 
+# Env vars
+python-dotenv==1.0.1
+ 

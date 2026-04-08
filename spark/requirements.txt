@@ -1,0 +1,16 @@
+# ── spark/requirements.txt ───────────────────────────────
+# PySpark (must match the version in the Dockerfile base image)
+pyspark==3.5.0
+
+# Postgres driver for SQLAlchemy (used to write results back)
+psycopg2-binary==2.9.9
+SQLAlchemy==2.0.29
+
+# ML — Linear Regression for forecasting (Python 3.8 compatible)
+scikit-learn==1.3.2
+numpy==1.24.4
+pandas==2.0.3
+
+# Env vars
+python-dotenv==1.0.1
+ 

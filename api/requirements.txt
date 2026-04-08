@@ -1,0 +1,16 @@
+# ── api/requirements.txt ─────────────────────────────────
+# Web framework
+fastapi==0.110.1
+uvicorn[standard]==0.29.0
+ 
+# Database ORM
+SQLAlchemy==2.0.29
+psycopg2-binary==2.9.9
+ 
+# Data validation (Pydantic v2 ships with FastAPI)
+pydantic==2.6.4
+pydantic-settings==2.2.1
+ 
+# Env vars
+python-dotenv==1.0.1
+ 

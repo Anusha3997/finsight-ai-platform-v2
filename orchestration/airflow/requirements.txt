@@ -1,0 +1,10 @@
+# ── orchestration/airflow/requirements.txt ───────────────
+# Airflow providers — these add operators for Postgres and HTTP
+apache-airflow-providers-postgres==5.10.2
+apache-airflow-providers-http==4.10.0
+
+# Needed to trigger the Spark job via subprocess or HTTP from the DAG
+requests==2.31.0
+
+# Env vars
+python-dotenv==1.0.1
