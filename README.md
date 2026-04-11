@@ -77,9 +77,9 @@ docker-compose up ui -d
 ```
 
 ## ServiceURL
-**Streamlit UI:** http://localhost:8501
-**FastAPI docshttp:** //localhost:8000/docs
-**Airflowhttp:** //localhost:8080
+- **Streamlit UI:** http://localhost:8501
+- **FastAPI docshttp:** //localhost:8000/docs
+- **Airflowhttp:** //localhost:8080
 
 
 
