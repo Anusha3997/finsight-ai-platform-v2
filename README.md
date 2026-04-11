@@ -11,16 +11,17 @@ Enter any stock ticker (AAPL, MSFT, TSLA, GOOGL) and Finsight shows:
 ## Why v2?
 This is a complete architectural overhaul of Version 1
 
-**Ingestion:** Direct Stooq API call on request -> Kafka producer streaming continuously
-**Processing:** Computed in FastAPI on every request -> Pre-computed by PySpark, served instantly
-**ML:** Linear Regression in API layer -> Linear Regression in Spark job
-**Orchestration:** Manual / none -> Airflow DAG — daily scheduled pipeline
-**Load time:** Slow — computed on demand -> Fast — results already in Postgres
-**Scalability:** Single ticker at a time -> Multiple tickers processed in parallel
+- **Ingestion:** Direct Stooq API call on request -> Kafka producer streaming continuously
+- **Processing:** Computed in FastAPI on every request -> Pre-computed by PySpark, served instantly
+- **ML:** Linear Regression in API layer -> Linear Regression in Spark job
+- **Orchestration:** Manual / none -> Airflow DAG — daily scheduled pipeline
+- **Load time:** Slow — computed on demand -> Fast — results already in Postgres
+- **Scalability:** Single ticker at a time -> Multiple tickers processed in parallel
 
 
-**The core insight** : In v1, every time a user searched a ticker the API fetched data, ran regression, and computed risk metrics in real time — this was slow and didn't scale. 
-In v2, Spark pre-computes everything on a schedule and stores results. The API just reads from Postgres — sub-100ms response times regardless of how complex the computation was.
+**The core insight** :
+- In v1, every time a user searched a ticker the API fetched data, ran regression, and computed risk metrics in real time — this was slow and didn't scale. 
+- In v2, Spark pre-computes everything on a schedule and stores results. The API just reads from Postgres — sub-100ms response times regardless of how complex the computation was.
 
 ## UI Screenshots
 **Price history** — candlestick chart with OHLCV metrics
@@ -30,16 +31,16 @@ In v2, Spark pre-computes everything on a schedule and stores results. The API j
 **Risk metrics** — Sharpe ratio, volatility, max drawdown
 
 ## Tech Stack
-Data source - yfinance
-Message queue - Apache Kafka + Zookeeper
-Stream processing - PySpark Structured Streaming
-Machine learning - Scikit-learn Linear Regression
-Database - PostgreSQL + SQLAlchemy
-Orchestration - Apache Airflow
-API - FastAPI + Pydantic
-UI - Streamlit
-Infrastructure - Docker + Docker Compose
-Testing- Pytest + SQLite fixtures
+- Data source - yfinance
+- Message queue - Apache Kafka + Zookeeper
+- Stream processing - PySpark Structured Streaming
+- Machine learning - Scikit-learn Linear Regression
+- Database - PostgreSQL + SQLAlchemy
+- Orchestration - Apache Airflow
+- API - FastAPI + Pydantic
+- UI - Streamlit
+- Infrastructure - Docker + Docker Compose
+- Testing- Pytest + SQLite fixtures
 
 ## Risk Metrics Explained
 - Sharpe Ratio- Risk-adjusted return. > 1.0 = strong, < 0 = poor
