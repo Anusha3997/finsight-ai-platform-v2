@@ -11,7 +11,7 @@
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white)
 
 Real-time stock analytics pipeline — prices, forecasts, and risk metrics from a single ticker search.
-![Architecture](screenshots/architecture.png)
+![Architecture](screenshots/Architecture.png)
 
 ## What it does
 Enter any stock ticker (AAPL, MSFT, TSLA, GOOGL) and Finsight shows:
@@ -37,13 +37,13 @@ This is a complete architectural overhaul of Version 1
 
 ## UI Screenshots
 **Price history** — candlestick chart with OHLCV metrics
-![Price Chart](screenshots/price_chart.png)
+![Price Chart](screenshots/Chart.png)
 
 **7-day forecast** — Linear Regression with target price
-![Forecast](screenshots/forecast.png)
+![Forecast](screenshots/Forecast.png)
 
 **Risk metrics** — Sharpe ratio, volatility, max drawdown
-![Risk Metrics](screenshots/risk_metrics.png)
+![Risk Metrics](screenshots/Risk_Metrics.png)
 
 ## Tech Stack
 - Data source - yfinance
