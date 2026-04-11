@@ -1,5 +1,16 @@
 # Finsight AI Platform v2
 Real-time stock analytics pipeline — prices, forecasts, and risk metrics from a single ticker search.
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white)
+![Apache Spark](https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white)
+![Apache Airflow](https://img.shields.io/badge/Apache_Airflow-017CEE?style=for-the-badge&logo=apache-airflow&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Scikit Learn](https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white)
+![Architecture](screenshots/architecture.png)
 
 ## What it does
 Enter any stock ticker (AAPL, MSFT, TSLA, GOOGL) and Finsight shows:
@@ -25,10 +36,13 @@ This is a complete architectural overhaul of Version 1
 
 ## UI Screenshots
 **Price history** — candlestick chart with OHLCV metrics
+![Price Chart](screenshots/price_chart.png)
 
 **7-day forecast** — Linear Regression with target price
+![Forecast](screenshots/forecast.png)
 
 **Risk metrics** — Sharpe ratio, volatility, max drawdown
+![Risk Metrics](screenshots/risk_metrics.png)
 
 ## Tech Stack
 - Data source - yfinance
