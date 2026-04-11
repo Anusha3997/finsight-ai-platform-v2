@@ -1,5 +1,4 @@
 # Finsight AI Platform v2
-Real-time stock analytics pipeline — prices, forecasts, and risk metrics from a single ticker search.
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white)
 ![Apache Spark](https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white)
@@ -10,6 +9,8 @@ Real-time stock analytics pipeline — prices, forecasts, and risk metrics from 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Scikit Learn](https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white)
+
+Real-time stock analytics pipeline — prices, forecasts, and risk metrics from a single ticker search.
 ![Architecture](screenshots/architecture.png)
 
 ## What it does
